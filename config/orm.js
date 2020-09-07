@@ -11,8 +11,8 @@ orm = {
     })
   },
 
-  insertOne: function (insertData) {
-    connection.query("INSERT INTO burgers SET ?", 
+  insertOne: function (table, insertData) {
+    connection.query("INSERT INTO " + table + " SET ?", 
     {
       burger_name: insertData,
       devoured: 0
@@ -22,9 +22,8 @@ orm = {
     });
   },
 
-  updateOne: function (updateData, updateType) {
-    orm.successFlag = false;
-    connection.query("UPDATE burgers SET ? WHERE ?", 
+  updateOne: function (table, updateData, updateType) {
+    connection.query("UPDATE " + table + " SET ? WHERE ?", 
     [
       {
         devoured: updateType

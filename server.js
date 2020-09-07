@@ -3,11 +3,6 @@ const orm = require("./config/orm");
 const express = require("express");
 const burger = require("./models/burger");
 
-const result = 
-
-//log how many are not devoured (devoured = 0) 
-console.log();
-
 // log all burger names 
 burger.selectAll(function (data) {
   for (x in data) {
@@ -18,6 +13,3 @@ burger.selectAll(function (data) {
     console.log(data[x].burger_name + " -- " + status);
   }
 });
-
-
-
