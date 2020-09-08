@@ -1,0 +1,123 @@
+body {
+  background-color: #fffebf;
+  margin: 0;
+}
+
+#container {
+  background-color: #fffebf;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#box1 {
+  width: 100%;
+}
+
+#box2 {
+  width: 100%;
+  display: flex;
+}
+
+#box3 {
+  width: 100%;
+}
+
+h1 {
+  font-size: 72px;
+  color: #ff5959;
+  font-family: Impact, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  color: #7a7979;
+  font-family: Impact, Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+img {
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+}
+
+#burger-list {
+  width: 100%;
+  list-style-type: none;
+}
+
+#devoured-list {
+  width: 100%;
+  list-style-type: none;
+}
+
+.devoured-card {
+  font-family: Impact, Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  font-size: 20px;
+  margin: 0 auto;
+  background-color: #7c7c7c;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  list-style-type: none;
+}
+
+.burger-card {
+  font-family: Impact, Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  font-size: 20px;
+  margin: 0 auto;
+  background-color: #ff5959;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  list-style-type: none;
+}
+
+input {
+  border: 1px solid;
+  border-radius: 3px;
+  width: 300px;
+  padding: 10px;
+  margin: 5px auto;
+  font-family: Helvetica, sans-serif;
+}
+
+button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: #ff5959;
+  color: white;
+  border-radius: 10px;
+  margin: 5px auto;
+  font-family: Helvetica, sans-serif;
+}
+
+.eat-button {
+ padding: 5px;
+ margin-left: 20px;
+ width: 75px; 
+ background-color: #ca0000;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+
+  container {
+    width: 100%;
+    margin: 0;
+  }
+}

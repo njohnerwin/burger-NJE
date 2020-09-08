@@ -11,28 +11,31 @@ orm = {
     })
   },
 
-  insertOne: function (table, insertData) {
-    connection.query("INSERT INTO " + table + " SET ?", 
+  insertOne: function (insertData) {
+    connection.query("INSERT INTO burgers SET ?", 
     {
       burger_name: insertData,
-      devoured: 0
+      devoured: false
     }, 
     function(err, res) {
       if (err) throw (err);
     });
   },
 
-  updateOne: function (table, updateData, updateType) {
-    connection.query("UPDATE " + table + " SET ? WHERE ?", 
+  updateOne: function (updateData) {
+    connection.query("UPDATE burgers SET ? WHERE ?", 
     [
       {
-        devoured: updateType
+        devoured: true
       }, 
       {
-        burger_name: updateData
+        id: updateData
       }
     ], function(err, res) {
-      if (err) throw (err);
+      if (err) {
+        console.log(err)
+        return;
+      };
     });
   },
 }

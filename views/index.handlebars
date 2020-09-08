@@ -1,0 +1,38 @@
+<div id="container">
+  <div id="box1">
+    <h1>IT'S BURGER TIME!!!</h1>
+    <img src="/img/glossy-burger.png"></img>
+  </div>
+  
+  <div id="box2">
+    <div id="burger-list">
+      <h2>BURGERS!</h2>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div id="devoured-list">
+      <h2>DEVOURED!</h2>
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/devoured-block}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  
+  <div id="box3">
+    <input type="text" id="burger-name" name="burger-name" placeholder="NAME THAT BURGER!"></input>
+    <br>
+    <button type="submit" id="submit-burger">BUILD THAT BURGER!</button>
+  </div>
+</div>
+
+<script src="/js/script.js"></script>
