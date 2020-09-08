@@ -12,16 +12,16 @@ body {
   flex-wrap: wrap;
 }
 
-#box1 {
+#header-logo {
   width: 100%;
 }
 
-#box2 {
+#results-grid {
   width: 100%;
   display: flex;
 }
 
-#box3 {
+#input-zone {
   width: 100%;
 }
 
