@@ -16,7 +16,7 @@ Ridiculous just-for-fun assignment for the UCONN Coding Bootcamp. The goal was t
 
 ## Usage
 
-Check out the live Heroku deployment at (link here)
+Check out the live Heroku deployment at https://burgertime-nje.herokuapp.com/
 
 ## Contributing
 
