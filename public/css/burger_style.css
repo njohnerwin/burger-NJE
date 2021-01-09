@@ -1,15 +1,25 @@
 body {
-  background-color: #fffebf;
+  background-color: #2e2e2e;
   margin: 0;
 }
 
 #container {
-  background-color: #fffebf;
-  width: 60%;
+  background-color: #2e2e2e;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
 }
 
 #header-logo {
@@ -26,23 +36,23 @@ body {
 }
 
 h1 {
-  font-size: 72px;
-  color: #ff5959;
-  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
   font-size: 24px;
+  font-weight: normal;
   color: #7a7979;
-  font-family: Helvetica, sans-serif;
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
 }
 
 img {
   margin: 0 auto;
-  height: 300px;
-  width: 300px;
+  width: 450px;
 }
 
 #burger-list {
@@ -56,26 +66,32 @@ img {
 }
 
 .devoured-card {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
+  border-radius: 5px;
+  height: 35px;
   padding: 10px 0px 10px 10px;
   font-size: 20px;
+  font-weight: normal;
   margin: 0 auto;
+  margin-bottom: 2px;
   background-color: #7c7c7c;
   color: white;
-  border: 1px solid rgb(255, 255, 255);
   list-style-type: none;
 }
 
 .burger-card {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 5px;
   width: 100%;
+  height: 35px;
   padding: 10px 0px 10px 10px;
   font-size: 20px;
+  font-weight: normal;
   margin: 0 auto;
-  background-color: #ff5959;
+  margin-bottom: 2px;
+  background-color: #ec6363;
   color: white;
-  border: 1px solid rgb(255, 255, 255);
   list-style-type: none;
 }
 
@@ -85,7 +101,7 @@ input {
   width: 300px;
   padding: 10px;
   margin: 5px auto;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {
@@ -96,7 +112,7 @@ button {
   color: white;
   border-radius: 10px;
   margin: 5px auto;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .eat-button {
